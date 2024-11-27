@@ -2,7 +2,6 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
-use App\Models\CustomerModel;
 use App\Models\Foodmart;
 
 
@@ -38,8 +37,6 @@ class UserController extends BaseController
             ]);
 
             // Ambil data customer
-            // $model = new CustomerModel();
-            // $data['users'] = $model->getCustomerData();
             $model = model(Foodmart::class);
             $data['foodmart'] = $model->getDataFoodmart();
             return view('header', $data) . view('menu') . view('foodmart') . view('footer');
