@@ -16,7 +16,7 @@ class FoodmartController extends BaseController
         $model = model(Foodmart::class);
         $data = [
             'message' => 'success',
-            'store' => $model->getDataFoodmart()
+            'user' => $model->getDataFoodmart()
         ];
         return $this->response->setJSON($data);
     }

@@ -21,6 +21,12 @@ $routes->get('/coba', 'CobaController::index');
 $routes->post('/coba/inputDataCoba', 'CobaController::inputDataCoba');
 $routes->post('/coba/deleteDataCoba', 'CobaController::deleteDataCoba');
 $routes->post('/coba/updateDataCoba', 'CobaController::updateDataCoba');
+$routes->get('/login', 'UserController::login');
+$routes->post('/loginUser', 'UserController::loginUser');
+
+$routes->get('/logout', 'UserController::login');
+$routes->get('/home', 'UserController::home');
+
 
 
 

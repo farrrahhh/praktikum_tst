@@ -2,6 +2,6 @@
 <a href="/">Dashboard</a> |
 <a href="/about">About</a> |
 <a href="/blog">Blog</a> |
-<a href="/foodmart">Foodmart</a>
-<a href="/foodmartAPI">Foodmart API</a>
+<a href="/foodmart">Customer</a> |
+<a href="/foodmartAPI">Customer API</a>
 </p>

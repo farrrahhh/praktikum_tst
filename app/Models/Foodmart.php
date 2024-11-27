@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class Foodmart extends Model
 {
-    protected $table = 'store_foodmart';
+    protected $table = 'customer';
 
     public function getDataFoodmart()
     {

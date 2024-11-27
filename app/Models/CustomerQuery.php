@@ -19,4 +19,12 @@ class CustomerQuery extends Model{
         return $this->db->query($query, [$likeTerm, $likeTerm, $likeTerm])->getResult();
     }
 
+    public function getCustomerData()
+    {
+        $result = $this->findAll();
+    
+        return $result;
+    }
+    
+
 }

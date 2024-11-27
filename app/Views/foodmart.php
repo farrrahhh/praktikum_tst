@@ -1,32 +1,24 @@
-<b>Store Foodmart</b> 
-<p>Data Store Foodmart</p>
+<b>Customer Foodmart</b> 
+<p>Data Customer Foodmart</p>
 
 <?php if (!empty($foodmart) && is_array($foodmart)): ?>
     <table>
         <tr>
-            <th>Store ID</th>
-            <th>Store Name</th>
-            <th>Store Type</th>
-            <th>Region ID</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Country</th>
-            <th>Manager</th>
-            <th>Phone</th>
-            <th>Opened Date</th>
+            <th>Customer ID</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Full Name</th>
+            
         </tr>
-        <?php foreach ($foodmart as $store): ?>
+        <?php foreach ($foodmart as $user): ?>
         <tr>
-            <td><?= esc($store['store_id']) ?></td>
-            <td><?= esc($store['store_name']) ?></td>
-            <td><?= esc($store['store_type']) ?></td>
-            <td><?= esc($store['region_id']) ?></td>
-            <td><?= esc($store['store_city']) ?></td>
-            <td><?= esc($store['store_state']) ?></td>
-            <td><?= esc($store['store_country']) ?></td>
-            <td><?= esc($store['store_manager']) ?></td>
-            <td><?= esc($store['store_phone']) ?></td>
-            <td><?= esc($store['first_opened_date']) ?></td>
+            <td><?= esc($user['customer_id']) ?></td>
+            <td><?= esc($user['fname']) ?></td>
+            <td><?= esc($user['mi']) ?></td>
+            <td><?= esc($user['lname']) ?></td>
+            <td><?= esc($user['fullname']) ?></td>
+            
         </tr>
         <?php endforeach ?>
     </table>
